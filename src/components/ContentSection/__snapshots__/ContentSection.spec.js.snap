@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentSection snapshot renders 1`] = `
+<section
+  className="ContentSection ContentSection--dark ContentSection--center"
+  style={
+    Object {
+      "height": "undefined",
+    }
+  }
+>
+  <p>
+    Content
+  </p>
+</section>
+`;

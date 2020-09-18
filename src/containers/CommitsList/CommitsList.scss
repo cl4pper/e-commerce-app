@@ -1,0 +1,18 @@
+.CommitsList {
+  color: $text-color-primary;
+
+  &__title {
+    text-align: center;
+    margin-bottom: size("md");
+    @include fontTitle("sm");
+  }
+
+  &__list {
+    list-style: none;
+
+    > p {
+      margin: 0;
+      margin-bottom: size("sm");
+    }
+  }
+}

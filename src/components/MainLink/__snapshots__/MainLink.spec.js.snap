@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainLink snapshot renders 1`] = `
+<a
+  className="MainLink MainLink--dark"
+  href=""
+  target="_blank"
+>
+  Link
+</a>
+`;
