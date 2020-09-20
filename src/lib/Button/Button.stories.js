@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { Button } from './Button';
 
 const stories = storiesOf('Button', module);
@@ -14,5 +14,6 @@ const props = {
 stories.add('Default', () => (
 	<Button
 		label={text('Label', props.label, null)}
-		onClick={props.onClick} />
+		onClick={props.onClick}
+		secondary={boolean('Secondary', false)} />
 ));
