@@ -1,1 +1,0 @@
-export * from './CommitsList/CommitsList';

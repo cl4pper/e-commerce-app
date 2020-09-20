@@ -1,0 +1,15 @@
+.Button {
+	padding: 8px 10px;
+	background-color: #FFF; // color-primary
+	border: 2px solid #000; // color-light
+	border-radius: 4px;
+	box-shadow: 0 4px 8px #EEE; // grey-light
+	outline: none;
+	cursor: pointer;
+
+	&:active {
+		position: relative;
+		top: 1px;
+		box-shadow: 0 2px 4px #EEE; // grey-light
+	}
+}

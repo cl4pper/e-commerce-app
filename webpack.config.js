@@ -12,6 +12,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
+      '@lib': path.resolve(__dirname, 'src/lib'),
       '@components': path.resolve(__dirname, 'src/components'),
       '@containers': path.resolve(__dirname, 'src/containers'),
       '@styles': path.resolve(__dirname, 'src/styles'),
@@ -39,10 +40,10 @@ module.exports = {
 				test: /\.scss$/,
 				use: [
 					{
- loader: 'style-loader' 
+ loader: 'style-loader'
 },
 					{
- loader: 'css-loader' 
+ loader: 'css-loader'
 },
 					{
             loader: 'sass-loader',
@@ -56,10 +57,10 @@ module.exports = {
 				test: /\.(jpeg|jpg|png|gif|woff|woff2|eot|ttf)$/,
 				use: [
 					{
- loader: 'file-loader' 
+ loader: 'file-loader'
 },
 					{
- loader: 'url-loader' 
+ loader: 'url-loader'
 }
 				]
       },
@@ -67,10 +68,10 @@ module.exports = {
         test: /\.svg$/,
         use: [
           {
- loader: '@svgr/webpack' 
+ loader: '@svgr/webpack'
 },
           {
- loader: 'url-loader' 
+ loader: 'url-loader'
 }
         ]
       }

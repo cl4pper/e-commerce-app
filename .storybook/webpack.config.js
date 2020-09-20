@@ -6,6 +6,7 @@ module.exports = ({ config }) => {
 			extensions: ['.js', '.jsx'],
 
 			alias: {
+				'@lib': path.resolve(__dirname, '../src/lib'),
 				'@components': path.resolve(__dirname, '../src/components'),
 				'@containers': path.resolve(__dirname, '../src/containers'),
 				'@styles': path.resolve(__dirname, '../src/styles'),
