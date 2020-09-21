@@ -1,0 +1,33 @@
+.Text {
+	width: 100%;
+	font-size: 16px;
+	@include fontText("md");
+
+	&--subtext {
+		@include fontText("sm");
+	}
+
+	&--alert {
+		@include fontText("lg");
+	}
+
+	&--bold {
+		font-weight: bold;
+	}
+
+	&--italic {
+		font-style: italic;
+	}
+
+	&--underline {
+		text-decoration: underline;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+	}
+}

@@ -1,5 +1,5 @@
 {
-  "testRegex": "((\\.|/*.)(spec))\\.js?$",
+  "testRegex": "((\\.|/*.)(test))\\.js?$",
   "moduleNameMapper": {
     "^.+\\.(css|less|scss)$": "identity-obj-proxy"
   }
