@@ -4,6 +4,9 @@ import classnames from 'classnames';
 // STYLE
 import './Button.scss';
 
+// COMPONENTS
+import { Text } from '@lib';
+
 const Button = (props) => {
 	const { label, onClick, secondary } = props;
 
@@ -11,7 +14,7 @@ const Button = (props) => {
 		<button className={classnames('Button', {
 			'Button--secondary': secondary
 		})} onClick={onClick}>
-			{label}
+			<Text text={label} bold center />
 		</button>
 	);
 };

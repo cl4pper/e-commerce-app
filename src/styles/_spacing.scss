@@ -9,15 +9,15 @@
   }
 
   @if $size == "md" {
-    @return 20px;
+    @return 15px;
   }
 
   @if $size == "lg" {
-    @return 40px;
+    @return 20px;
   }
 
   @if $size == "xg" {
-    @return 60px;
+    @return 40px;
   }
 
 }

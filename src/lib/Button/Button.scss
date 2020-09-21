@@ -1,24 +1,24 @@
 .Button {
-	padding: 8px 10px;
-	color: #FFF; // color-light
-	box-shadow: 0 4px 8px #EEE; // grey-light
-	border: 2px solid #000; // color-primary
-	background-color: #000; // color-primary
+	padding: spacing("sm") spacing("md");
+	color: $color-text-light;
+	box-shadow: 0 4px 8px $color-grey-light;
+	border: 2px solid $color-primary;
+	background-color: $color-primary;
 	border-radius: 4px;
 	outline: none;
 	cursor: pointer;
 
 	&--secondary {
-		color: #000; // color-primary
-		background-color: #FFF; // color-light
-		border: 2px solid #000; // color-primary
-		box-shadow: 0 4px 8px #EEE; // grey-light
+		color: $color-primary;
+		background-color: $color-light;
+		border: 2px solid $color-primary;
+		box-shadow: 0 4px 8px $color-grey-light;
 		border-radius: 4px;
 	}
 
 	&:active {
 		position: relative;
 		top: 1px;
-		box-shadow: 0 2px 4px #EEE; // grey-light
+		box-shadow: 0 2px 4px $color-grey-light;
 	}
 }
