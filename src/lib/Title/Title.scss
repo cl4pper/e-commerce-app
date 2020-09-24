@@ -1,25 +1,41 @@
-.Title {
-	width: 100%;
-	margin: 0;
-	@include fontTitle("md");
+.TitleComponent {
 
-	&--subtitle {
-		@include fontTitle("sm");
+	&__breakline {
+		width: 100%;
+		margin: 0;
 	}
 
-	&--bold {
-		font-weight: bold;
-	}
+	.Title {
+		width: auto;
+		// word-wrap: normal;
+		margin: 0;
+		@include fontTitle("md");
 
-	&--underline {
-		text-decoration: underline;
-	}
+		// &::after {
+		// 	width: 100px;
+		// 	height: 1px;
+		// 	content: "";
+		// 	background-color: red;
+		// }
 
-	&--center {
-		text-align: center;
-	}
+		&--subtitle {
+			@include fontTitle("sm");
+		}
 
-	&--right {
-		text-align: right;
+		&--bold {
+			font-weight: bold;
+		}
+
+		&--underline {
+			text-decoration: underline;
+		}
+
+		&--center {
+			text-align: center;
+		}
+
+		&--right {
+			text-align: right;
+		}
 	}
 }

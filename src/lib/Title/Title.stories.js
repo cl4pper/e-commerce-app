@@ -14,6 +14,7 @@ stories.add('Default', () => (
 	<Title
 		content={text('content', props.content, null)}
 		subtitle={boolean('subtext', false)}
+		breakline={boolean('breakline', false)}
 		bold={boolean('bold', false)}
 		underline={boolean('underline', false)}
 		center={boolean('center', false)}
