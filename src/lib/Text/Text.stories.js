@@ -7,12 +7,12 @@ const stories = storiesOf('Text', module);
 stories.addDecorator(withKnobs);
 
 const props = {
-	text: 'Text comes here',
+	content: 'Text comes here',
 };
 
 stories.add('Default', () => (
 	<Text
-		text={text('text', props.text, null)}
+		content={text('content', props.content, null)}
 		alert={boolean('alert', false)}
 		subtext={boolean('subtext', false)}
 		bold={boolean('bold', false)}

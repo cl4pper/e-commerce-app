@@ -14,7 +14,7 @@ const Button = (props) => {
 		<button className={classnames('Button', {
 			'Button--secondary': secondary
 		})} onClick={onClick}>
-			<Text text={label} bold center />
+			<Text content={label} bold center />
 		</button>
 	);
 };
