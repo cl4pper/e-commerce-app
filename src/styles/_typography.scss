@@ -27,14 +27,14 @@ $font-family-Teko: 'Teko', sans-serif;
   font-family: $font-family-Roboto;
 
   @if $size == "sm" {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   @if $size == "md" {
-    font-size: 48px;
+    font-size: 32px;
   }
 
   @if $size == "lg" {
-    font-size: 64px;
+    font-size: 48px;
   }
 }

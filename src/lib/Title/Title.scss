@@ -1,0 +1,25 @@
+.Title {
+	width: 100%;
+	margin: 0;
+	@include fontTitle("md");
+
+	&--subtitle {
+		@include fontTitle("sm");
+	}
+
+	&--bold {
+		font-weight: bold;
+	}
+
+	&--underline {
+		text-decoration: underline;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+	}
+}
