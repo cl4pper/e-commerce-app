@@ -9,14 +9,17 @@ const Title = (prop) => {
 
 	return (
 		<div className="TitleComponent">
-			<p className={classnames('Title', {
-				'Title--subtitle': subtitle,
-				'Title--bold': bold,
-				'Title--underline': underline,
-				'Title--center': center,
-				'Title--right': right,
-			})}>{content}</p>
-			{ breakline && <hr className="TitleComponent__breakline" /> }
+			<p
+				className={classnames('Title', {
+					'Title--subtitle': subtitle,
+					'Title--bold': bold,
+					'Title--underline': underline,
+					'Title--center': center,
+					'Title--right': right
+				})}>
+				{content}
+			</p>
+			{breakline && <hr className="TitleComponent__breakline" />}
 		</div>
 	);
 };

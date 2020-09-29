@@ -11,9 +11,11 @@ const Button = (props) => {
 	const { label, onClick, secondary } = props;
 
 	return (
-		<button className={classnames('Button', {
-			'Button--secondary': secondary
-		})} onClick={onClick}>
+		<button
+			className={classnames('Button', {
+				'Button--secondary': secondary
+			})}
+			onClick={onClick}>
 			<Text content={label} bold center />
 		</button>
 	);

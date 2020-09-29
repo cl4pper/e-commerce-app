@@ -1,0 +1,28 @@
+.Modal {
+	width: 100%;
+	height: 100%;
+	padding: spacing("lg");
+	background: $color-modal-bg;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&--closed {
+		display: none;
+	}
+
+	&__closeIcon {
+		display: flex;
+		justify-content: flex-end;
+
+		> svg {
+			cursor: pointer;
+		}
+	}
+
+	&__container {
+		padding: spacing("sm") spacing("md");
+		background-color: $color-light;
+		border-radius: border("sm");
+	}
+}

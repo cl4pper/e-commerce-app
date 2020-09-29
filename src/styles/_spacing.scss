@@ -19,5 +19,19 @@
   @if $size == "xg" {
     @return 40px;
   }
+}
 
+@function border($size: "md") {
+
+  @if $size == "sm" {
+    @return 2px;
+  }
+
+  @if $size == "md" {
+    @return 4px;
+  }
+
+  @if $size == "lg" {
+    @return 8px;
+  }
 }
