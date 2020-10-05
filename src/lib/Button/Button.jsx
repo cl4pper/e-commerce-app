@@ -6,9 +6,10 @@ import './Button.scss';
 
 // COMPONENTS
 import { Text } from '@lib';
+import { LoadingIcon } from '@icons';
 
 const Button = (props) => {
-	const { label, onClick, secondary } = props;
+	const { label, onClick, secondary, loading } = props;
 
 	return (
 		<button
@@ -16,7 +17,7 @@ const Button = (props) => {
 				'Button--secondary': secondary
 			})}
 			onClick={onClick}>
-			<Text content={label} bold center />
+			{ loading ? <LoadingIcon className="Button__loader" /> : <Text content={label} bold center /> }
 		</button>
 	);
 };

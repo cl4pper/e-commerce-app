@@ -8,12 +8,14 @@ stories.addDecorator(withKnobs);
 
 const props = {
 	label: 'Button label',
+	loading: false,
 	onClick: () => window.alert('Button clicked!'),
 };
 
 stories.add('Default', () => (
 	<Button
-		label={text('Label', props.label, null)}
+		loading={boolean('loading', props.loading)}
+		label={text('label', props.label, null)}
 		onClick={props.onClick}
-		secondary={boolean('Secondary', false)} />
+		secondary={boolean('secondary', false)} />
 ));
