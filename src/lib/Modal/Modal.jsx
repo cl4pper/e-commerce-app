@@ -8,16 +8,16 @@ import './Modal.scss';
 import { Title } from '@lib';
 import { CloseIcon } from '@icons';
 
-const Modal = ({ title, content }) => {
-	const [open, handleOpen] = useState(true);
+const Modal = ({ title, content, open }) => {
+	const [show, handleShow] = useState(open);
 
 	return (
 		<div
 			className={classnames('Modal', {
-				'Modal--closed': !open
+				'Modal--closed': !show
 			})}>
 			<div className="Modal__container">
-				<div className="Modal__closeIcon" onClick={() => handleOpen(false)}><CloseIcon /></div>
+				<div className="Modal__closeIcon" onClick={() => handleShow(false)}><CloseIcon /></div>
 				{title ? <Title content={title} subtitle /> : null}
 				{content}
 			</div>
