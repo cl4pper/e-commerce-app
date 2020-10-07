@@ -1,14 +1,17 @@
 // MAIN COLORS
 $color-primary: rgb(239, 91, 161);
-// $color-secondary: rgb(97, 171, 226);
+$color-secondary: rgb(97, 171, 226);
 
 // SUPPORT COLORS
 $color-light: rgb(255, 255, 255);
 $color-dark: rgb(49, 49, 49);
 $color-grey-light: rgb(238, 238, 238);
 $color-modal-bg: rgba(0, 0, 0, 0.6);
+$color-input-border: rgba(0, 0, 0, 0.6);
 
 // TEXT COLORS
 $color-text-dark: rgb(49, 49, 49);
 $color-text-light: rgb(255, 255, 255);
-// $color-link: rgb(97, 171, 226);
+$color-link: rgb(97, 171, 226);
+$color-text-error: rgb(234, 66, 70);
+$color-text-placeholder: rgb(219, 219, 219);

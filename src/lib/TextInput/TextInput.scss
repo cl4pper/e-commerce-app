@@ -1,0 +1,34 @@
+.TextInput {
+	width: 100%;
+
+	> p {
+		margin: 0;
+	}
+
+	&__label, &__error {
+		@include fontText("sm");
+	}
+
+	&__label {
+		padding: 0 spacing("sm");
+		padding-bottom: spacing("xs");
+	}
+
+	&__input {
+		width: 100%;
+		padding: spacing("sm");
+		border: 1px solid $color-input-border;
+		border-radius: border("md");
+		outline: none;
+
+		&::placeholder {
+			color: $color-text-placeholder;
+		}
+	}
+
+	&__error {
+		color: $color-text-error;
+		padding: 0 spacing("sm");
+		padding-top: spacing("xs");
+	}
+}

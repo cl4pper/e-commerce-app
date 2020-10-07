@@ -17,7 +17,7 @@ const Button = (props) => {
 				'Button--secondary': secondary
 			})}
 			onClick={onClick}>
-			{ loading ? <LoadingIcon className="Button__loader" /> : <Text content={label} bold center /> }
+			{loading ? <LoadingIcon className="Button__loader" /> : <Text content={label} bold center />}
 		</button>
 	);
 };

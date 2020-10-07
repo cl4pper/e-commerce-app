@@ -17,7 +17,9 @@ const Modal = ({ title, content, open }) => {
 				'Modal--closed': !show
 			})}>
 			<div className="Modal__container">
-				<div className="Modal__closeIcon" onClick={() => handleShow(false)}><CloseIcon /></div>
+				<div className="Modal__closeIcon" onClick={() => handleShow(false)}>
+					<CloseIcon />
+				</div>
 				{title ? <Title content={title} subtitle /> : null}
 				{content}
 			</div>
