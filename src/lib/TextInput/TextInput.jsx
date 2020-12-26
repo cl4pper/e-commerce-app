@@ -12,8 +12,9 @@ const TextInput = ({ id, label, placeholder, error, errorLabel, disabled, onChan
 				className="TextInput__input"
 				placeholder={placeholder}
 				disabled={disabled}
-				onChange={(e) => onChange(e.target.value)} />
-			{ error ? <p className="TextInput__error">{errorLabel}</p> : null }
+				onChange={(e) => onChange(e.target.value)}
+			/>
+			{error ? <p className="TextInput__error">{errorLabel}</p> : null}
 		</div>
 	);
 };

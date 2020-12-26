@@ -5,7 +5,16 @@ import classnames from 'classnames';
 import './Text.scss';
 
 const Text = (prop) => {
-	const { content, alert, subtext, bold, italic, underline, center, right } = prop;
+	const {
+		children,
+		alert,
+		subtext,
+		bold,
+		italic,
+		underline,
+		center,
+		right
+	} = prop;
 
 	return (
 		<p
@@ -18,7 +27,7 @@ const Text = (prop) => {
 				'Text--center': center && !right,
 				'Text--right': right && !center
 			})}>
-			{content}
+			{children}
 		</p>
 	);
 };
