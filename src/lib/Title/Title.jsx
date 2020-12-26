@@ -5,19 +5,19 @@ import classnames from 'classnames';
 import './Title.scss';
 
 const Title = (prop) => {
-	const { content, subtitle, bold, underline, center, right, breakline } = prop;
+	const { children, smaller, bold, underline, center, right, breakline } = prop;
 
 	return (
-		<div className="TitleComponent">
+		<div className="Title">
 			<p
-				className={classnames('Title', {
-					'Title--subtitle': subtitle,
-					'Title--bold': bold,
-					'Title--underline': underline,
-					'Title--center': center,
-					'Title--right': right
+				className={classnames('Title__content', {
+					'Title__content--smaller': smaller,
+					'Title__content--bold': bold,
+					'Title__content--underline': underline,
+					'Title__content--center': center && !right,
+					'Title__content--right': right && !center
 				})}>
-				{content}
+				{children}
 			</p>
 			{breakline && <hr className="TitleComponent__breakline" />}
 		</div>
