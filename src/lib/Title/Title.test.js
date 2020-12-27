@@ -25,42 +25,42 @@ describe('[lib] Title:', () => {
 		const { getByText } = render(<Title smaller>{children}</Title>);
 		const content = getByText(children);
 
-		expect(content.classList.contains('Title__content--smaller')).toBeTruthy();
+		expect(content.classList.contains(`${titleContentClassname}--smaller`)).toBeTruthy();
 	});
 
 	it('should apply bold style when bold prop is set', () => {
 		const { getByText } = render(<Title bold>{children}</Title>);
 		const content = getByText(children);
 
-		expect(content.classList.contains('Title__content--bold')).toBeTruthy();
+		expect(content.classList.contains(`${titleContentClassname}--bold`)).toBeTruthy();
 	});
 
 	it('should apply underline style when underline prop is set', () => {
 		const { getByText } = render(<Title underline>{children}</Title>);
 		const content = getByText(children);
 
-		expect(content.classList.contains('Title__content--underline')).toBeTruthy();
+		expect(content.classList.contains(`${titleContentClassname}--underline`)).toBeTruthy();
 	});
 
 	it('should apply center alignment when center prop is set', () => {
 		const { getByText } = render(<Title center>{children}</Title>);
 		const content = getByText(children);
 
-		expect(content.classList.contains('Title__content--center')).toBeTruthy();
+		expect(content.classList.contains(`${titleContentClassname}--center`)).toBeTruthy();
 	});
 
 	it('should apply right alignment when right prop is set', () => {
 		const { getByText } = render(<Title right>{children}</Title>);
 		const content = getByText(children);
 
-		expect(content.classList.contains('Title__content--right')).toBeTruthy();
+		expect(content.classList.contains(`${titleContentClassname}--right`)).toBeTruthy();
 	});
 
 	it('should NOT apply any alignment when right and center props are set', () => {
 		const { getByText } = render(<Title center right>{children}</Title>);
 		const content = getByText(children);
 
-		expect(content.classList.contains('Title__content--center')).toBeFalsy();
-		expect(content.classList.contains('Title__content--right')).toBeFalsy();
+		expect(content.classList.contains(`${titleContentClassname}--center`)).toBeFalsy();
+		expect(content.classList.contains(`${titleContentClassname}--right`)).toBeFalsy();
 	});
 });
