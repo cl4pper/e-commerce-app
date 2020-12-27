@@ -1,6 +1,11 @@
 {
   "testRegex": "((\\.|/*.)(test))\\.js?$",
   "moduleNameMapper": {
-    "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+		"^.+\\.(css|less|scss)$": "identity-obj-proxy",
+		"@lib": "<rootDir>/src/lib",
+		"@components": "<rootDir>/src/components",
+		"@containers": "<rootDir>/src/containers",
+		"@pages": "<rootDir>/src/pages",
+		"@icons": "<rootDir>/src/assets/icons"
   }
 }
