@@ -16,8 +16,14 @@ const Button = (props) => {
 				'Button--secondary': secondary
 			})}
 			onClick={onClick}>
-			{loading && <IconsHandler icon="loader" dataTestId="button-loading-icon" className="Button__loader" />}
-			{!loading && <Text bold center>{label}</Text>}
+			{loading && (
+				<IconsHandler icon="loader" dataTestId="button-loading-icon" className="Button__loader" />
+			)}
+			{!loading && (
+				<Text bold center>
+					{label}
+				</Text>
+			)}
 		</button>
 	);
 };

@@ -33,10 +33,13 @@ const IconsHandler = ({ icon, small, large, className, dataTestId }) => {
 	};
 
 	// select respective icon svg icon
-	switch(icon) {
-		case 'loader': return <LoadingIcon {...svgProps} />;
-		case 'close': return <CloseIcon {...svgProps} />;
-		default: return <LoadingIcon {...svgProps} />;
+	switch (icon) {
+		case 'loader':
+			return <LoadingIcon {...svgProps} />;
+		case 'close':
+			return <CloseIcon {...svgProps} />;
+		default:
+			return <LoadingIcon {...svgProps} />;
 	}
 };
 
