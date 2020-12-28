@@ -5,8 +5,7 @@ import classnames from 'classnames';
 import './Button.scss';
 
 // COMPONENTS
-import { Text } from '@lib';
-import { LoadingIcon } from '@icons';
+import { Text, IconsHandler } from '@lib';
 
 const Button = (props) => {
 	const { label, onClick, secondary, loading } = props;
@@ -17,7 +16,8 @@ const Button = (props) => {
 				'Button--secondary': secondary
 			})}
 			onClick={onClick}>
-			{loading ? <LoadingIcon dataTestId="button-loading-icon" className="Button__loader" /> : <Text bold center>{label}</Text>}
+			{loading && <IconsHandler icon="loader" dataTestId="button-loading-icon" className="Button__loader" />}
+			{!loading && <Text bold center>{label}</Text>}
 		</button>
 	);
 };
