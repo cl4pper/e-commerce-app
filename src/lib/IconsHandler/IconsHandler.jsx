@@ -19,15 +19,10 @@ const IconsHandler = ({ icon, small, large, className, dataTestId }) => {
 				width: '32px'
 			};
 		}
-
-		return {
-			height: '20px',
-			width: '20px'
-		};
 	};
 
 	const svgProps = {
-		...setSize(),
+		...setSize() || null,
 		className,
 		dataTestId
 	};
