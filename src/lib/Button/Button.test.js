@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
 import { Button } from './Button';
 
@@ -30,5 +30,15 @@ describe('[lib] Button:', () => {
 
 		expect(queryAllByText(label).length).toBe(0);
 		expect(queryAllByTestId('button-loading-icon').length).toBe(1);
+	});
+
+	it('should fire event when clicked', async () => {
+		const event = jest.fn();
+		const { container } = render(<Button onClick={() => event()} />);
+		const button = container.firstChild;
+
+		await fireEvent.click(button);
+
+		expect(event).toHaveBeenCalled();
 	});
 });
