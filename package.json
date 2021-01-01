@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "jest --config ./jest.config.json",
+		"test:all": "npm run test -- --watchAll",
 		"test:watch": "npm run test -- --watch",
+		"test:verbose": "npm run test -- --verbose=true --watch",
 		"app": "webpack-dev-server --open",
 		"style:fix": "prettier --write '**/*.jsx'",
 		"stories": "start-storybook --port 9090",
