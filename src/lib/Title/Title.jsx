@@ -4,11 +4,11 @@ import classnames from 'classnames';
 // STYLE
 import './Title.scss';
 
-const Title = (prop) => {
-	const { children, smaller, bold, underline, center, right, breakline } = prop;
+const Title = (props) => {
+	const { children, smaller, bold, underline, center, right, breakline, dataTestId } = props;
 
 	return (
-		<div className="Title">
+		<div className="Title" data-testid={dataTestId}>
 			<p
 				className={classnames('Title__content', {
 					'Title__content--smaller': smaller,

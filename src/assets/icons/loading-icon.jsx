@@ -1,22 +1,24 @@
 import React from 'react';
 
-const LoadingIcon = ({ width, height, viewBox, className, dataTestId }) => {
-	const props = {
-		width: width || '20px',
-		height: height || '20px',
-		viewBox: viewBox || '0 0 512 512'
+const LoadingIcon = (props) => {
+	const { width, height, viewBox, className, dataTestId } = props;
+
+	const sizes = {
+		WIDTH: width || '20px',
+		HEIGHT: height || '20px',
+		VIEWBOX: viewBox || '0 0 512 512'
 	};
 
 	return (
 		<svg
-			width={props.width}
-			height={props.height}
-			viewBox={props.viewBox}
+			width={sizes.WIDTH}
+			height={sizes.HEIGHT}
+			viewBox={sizes.VIEWBOX}
 			aria-hidden="true"
 			focusable="false"
 			data-prefix="fas"
 			data-icon="spinner"
-			data-testid={dataTestId}
+			data-testid={ dataTestId || 'loading-icon' }
 			role="img"
 			xmlns="http://www.w3.org/2000/svg"
 			className={className}>

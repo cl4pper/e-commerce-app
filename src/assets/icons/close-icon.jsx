@@ -1,21 +1,24 @@
 import React from 'react';
 
-const CloseIcon = ({ width, height, viewBox }) => {
-	const props = {
-		width: width || '24px',
-		height: height || '24px',
-		viewBox: viewBox || '0 0 352 512'
+const CloseIcon = (props) => {
+	const { width, height, viewBox, dataTestId } = props;
+
+	const sizes = {
+		WIDTH: width || '24px',
+		HEIGHT: height || '24px',
+		VIEWBOX: viewBox || '0 0 352 512'
 	};
 
 	return (
 		<svg
-			width={props.width}
-			height={props.height}
-			viewBox={props.viewBox}
+			width={sizes.WIDTH}
+			height={sizes.HEIGHT}
+			viewBox={sizes.VIEWBOX}
 			aria-hidden="true"
 			focusable="false"
 			data-prefix="fas"
 			data-icon="times"
+			data-testid={ dataTestId || 'close-icon' }
 			role="img"
 			xmlns="http://www.w3.org/2000/svg"
 			className="svg-inline--fa fa-times fa-w-11">

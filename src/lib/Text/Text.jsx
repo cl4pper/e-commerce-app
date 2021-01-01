@@ -4,8 +4,8 @@ import classnames from 'classnames';
 // STYLE
 import './Text.scss';
 
-const Text = (prop) => {
-	const { children, alert, subtext, bold, italic, underline, center, right } = prop;
+const Text = (props) => {
+	const { children, alert, subtext, bold, italic, underline, center, right } = props;
 
 	return (
 		<p

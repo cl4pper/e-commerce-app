@@ -3,7 +3,9 @@ import React from 'react';
 // ICONS
 import { LoadingIcon, CloseIcon } from '@icons';
 
-const IconsHandler = ({ icon, small, large, className, dataTestId }) => {
+const IconsHandler = (props) => {
+	const { icon, small, large, className, dataTestId } = props;
+
 	// set icon size
 	const setSize = () => {
 		if (small) {
