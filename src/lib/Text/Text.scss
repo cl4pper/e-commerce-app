@@ -3,11 +3,11 @@
 	margin: 0;
 	@include fontText("md");
 
-	&--subtext {
+	&--small {
 		@include fontText("sm");
 	}
 
-	&--alert {
+	&--tall {
 		@include fontText("lg");
 	}
 

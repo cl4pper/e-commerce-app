@@ -12,13 +12,12 @@ const props = {
 
 stories.add('Default', () => (
 	<Text
-		alert={boolean('alert', false)}
-		subtext={boolean('subtext', false)}
+		content={text('content', props.content, null)}
+		tall={boolean('tall', false)}
+		small={boolean('small', false)}
 		bold={boolean('bold', false)}
 		italic={boolean('italic', false)}
 		underline={boolean('underline', false)}
 		center={boolean('center', false)}
-		right={boolean('right', false)}>
-			{text('content', props.content, null)}
-		</Text>
+		right={boolean('right', false)}/>
 ));
