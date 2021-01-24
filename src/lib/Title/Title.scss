@@ -1,22 +1,14 @@
-.TitleComponent {
+.Title {
 
 	&__breakline {
 		width: 100%;
 		margin: 0;
 	}
 
-	.Title {
+	.Title__content {
 		width: auto;
-		// word-wrap: normal;
 		margin: 0;
 		@include fontTitle("md");
-
-		// &::after {
-		// 	width: 100px;
-		// 	height: 1px;
-		// 	content: "";
-		// 	background-color: red;
-		// }
 
 		&--smaller {
 			@include fontTitle("sm");

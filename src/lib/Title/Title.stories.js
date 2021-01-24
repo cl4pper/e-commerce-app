@@ -12,11 +12,12 @@ const props = {
 
 stories.add('Default', () => (
 	<Title
-		content={text('content', props.content, null)}
-		subtitle={boolean('subtext', false)}
+		smaller={boolean('smaller', false)}
 		breakline={boolean('breakline', false)}
 		bold={boolean('bold', false)}
 		underline={boolean('underline', false)}
 		center={boolean('center', false)}
-		right={boolean('right', false)} />
+		right={boolean('right', false)}>
+			{text('content', props.content, null)}
+		</Title>
 ));

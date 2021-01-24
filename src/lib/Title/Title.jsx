@@ -4,7 +4,7 @@ import classnames from 'classnames';
 // STYLE
 import './Title.scss';
 
-const Title = (props) => {
+const Title = props => {
 	const { children, smaller, bold, underline, center, right, breakline, dataTestId } = props;
 
 	return (
