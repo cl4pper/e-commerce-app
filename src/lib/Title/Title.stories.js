@@ -12,12 +12,12 @@ const props = {
 
 stories.add('Default', () => (
 	<Title
-		smaller={boolean('smaller', false)}
+		dataTestId="title-stories"
+		content={text('content', props.content, null)}
+		small={boolean('small', false)}
 		breakline={boolean('breakline', false)}
 		bold={boolean('bold', false)}
 		underline={boolean('underline', false)}
 		center={boolean('center', false)}
-		right={boolean('right', false)}>
-			{text('content', props.content, null)}
-		</Title>
+		right={boolean('right', false)}/>
 ));

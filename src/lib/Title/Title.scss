@@ -10,7 +10,7 @@
 		margin: 0;
 		@include fontTitle("md");
 
-		&--smaller {
+		&--small {
 			@include fontTitle("sm");
 		}
 
