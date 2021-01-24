@@ -1,28 +1,44 @@
-.Button {
-	width: 160px;
-	height: 40px;
-	box-sizing: border-box;
+$button-heigh: 40px;
+
+
+%ButtonStructure {
+	min-width: 100px;
+	height: $button-heigh;
+	border-radius: $button-heigh/2;
 	padding: spacing("sm") spacing("md");
-	color: $color-text-light;
-	box-shadow: 0 4px 8px $color-grey-light;
+	box-shadow: 0 1px 4px $color-primary;
 	border: 2px solid $color-primary;
-	background-color: $color-primary;
-	border-radius: 4px;
+	box-sizing: border-box;
 	outline: none;
 	cursor: pointer;
+}
+
+.Button {
+	@extend %ButtonStructure;
+	color: $color-text-light;
+	background-color: $color-primary;
+
+	&:hover {
+		background-color: $color-primary-light;
+		border: 2px solid $color-primary-light;
+		box-shadow: 0 2px 6px $color-primary-light;
+	}
 
 	&--secondary {
 		color: $color-primary;
 		background-color: $color-light;
-		border: 2px solid $color-primary;
-		box-shadow: 0 4px 8px $color-grey-light;
-		border-radius: 4px;
+
+		&:hover {
+			background-color: $color-grey-light;
+			border: 2px solid $color-primary-light;
+			box-shadow: 0 2px 6px $color-primary-light;
+		}
 	}
 
 	&:active {
 		position: relative;
 		top: 1px;
-		box-shadow: 0 2px 4px $color-grey-light;
+		box-shadow: none;
 	}
 
 	&__loader {
